@@ -22,18 +22,18 @@ int __bx_code_dump_bin__(
         int _i_buf = _addr * sizeof(__BX_CODE_T__) + sizeof(__BX_CODE_T__);
         switch (sizeof(__BX_CODE_T__))
         {
-        case 16:    _buf[--_i_buf] = (_code & (_mask << 120)) >> 120;
-        case 15:    _buf[--_i_buf] = (_code & (_mask << 112)) >> 112;
-        case 14:    _buf[--_i_buf] = (_code & (_mask << 104)) >> 104;
-        case 13:    _buf[--_i_buf] = (_code & (_mask <<  96)) >>  96;
-        case 12:    _buf[--_i_buf] = (_code & (_mask <<  88)) >>  88;
-        case 11:    _buf[--_i_buf] = (_code & (_mask <<  80)) >>  80;
-        case 10:    _buf[--_i_buf] = (_code & (_mask <<  72)) >>  72;
-        case 9:     _buf[--_i_buf] = (_code & (_mask <<  64)) >>  64;
-        case 8:     _buf[--_i_buf] = (_code & (_mask <<  56)) >>  56;
-        case 7:     _buf[--_i_buf] = (_code & (_mask <<  48)) >>  48;
-        case 6:     _buf[--_i_buf] = (_code & (_mask <<  40)) >>  40;
-        case 5:     _buf[--_i_buf] = (_code & (_mask <<  32)) >>  32;
+        // case 16:    _buf[--_i_buf] = (_code & (_mask << 120)) >> 120;
+        // case 15:    _buf[--_i_buf] = (_code & (_mask << 112)) >> 112;
+        // case 14:    _buf[--_i_buf] = (_code & (_mask << 104)) >> 104;
+        // case 13:    _buf[--_i_buf] = (_code & (_mask <<  96)) >>  96;
+        // case 12:    _buf[--_i_buf] = (_code & (_mask <<  88)) >>  88;
+        // case 11:    _buf[--_i_buf] = (_code & (_mask <<  80)) >>  80;
+        // case 10:    _buf[--_i_buf] = (_code & (_mask <<  72)) >>  72;
+        // case 9:     _buf[--_i_buf] = (_code & (_mask <<  64)) >>  64;
+        // case 8:     _buf[--_i_buf] = (_code & (_mask <<  56)) >>  56;
+        // case 7:     _buf[--_i_buf] = (_code & (_mask <<  48)) >>  48;
+        // case 6:     _buf[--_i_buf] = (_code & (_mask <<  40)) >>  40;
+        // case 5:     _buf[--_i_buf] = (_code & (_mask <<  32)) >>  32;
         case 4:     _buf[--_i_buf] = (_code & (_mask <<  24)) >>  24;
         case 3:     _buf[--_i_buf] = (_code & (_mask <<  16)) >>  16;
         case 2:     _buf[--_i_buf] = (_code & (_mask <<   8)) >>   8;
