@@ -36,21 +36,4 @@
 }
 
 
-
-#define __BX_CODE_ENV_SET_CODE_INC_IDX__(code) {\
-    if (__bx_code_env__->__rom_idx__ == BX_CODE_LEN_MAX)\
-    {\
-        __BX_CODE_ENV_DBG_PRINT__(\
-            "ERROR: Run out of ROM storage of size %d.",\
-            BX_CODE_LEN_MAX\
-        );\
-        return;\
-    }\
-    else\
-    {\
-        __bx_code_env__->__rom_data__[__bx_code_env__->__rom_idx__] = (code);\
-        __bx_code_env__->__rom_idx__ += 1;\
-    }\
-}
-
 #endif /* __BX_CODE_ENV_H__ */
