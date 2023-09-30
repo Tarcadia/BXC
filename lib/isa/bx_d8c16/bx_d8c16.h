@@ -80,19 +80,12 @@ __BX_CODE_T__ __bx_d8c16_op_i8_code(
 __BX_CODE_T__ __bx_d8c16_op_i11_code(
     __UINT8_TYPE__ o,
     __BX_INST11_T__ i11,
-    __UINT8_TYPE__ c,
-    __UINT8_TYPE__ d,
-    __UINT8_TYPE__ e,
     __UINT8_TYPE__ f
 );
 
 __BX_CODE_T__ __bx_d8c16_op_i12_code(
     __UINT8_TYPE__ o,
-    __BX_INST12_T__ i12,
-    __UINT8_TYPE__ c,
-    __UINT8_TYPE__ d,
-    __UINT8_TYPE__ e,
-    __UINT8_TYPE__ f
+    __BX_INST12_T__ i12
 );
 
 
