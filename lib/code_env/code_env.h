@@ -30,7 +30,7 @@
     int __bx_code_dump_verilog_##name##__(const char* filename, const char* modulename);\
     int __bx_code_genrate_##name##__();\
 
-#define dump_bx_code(name, type, ...) {\
+#define generate_bx_code(name, type, ...) {\
     __bx_code_genrate_##name##__();\
     __bx_code_dump_##type##_##name##__(__VA_ARGS__);\
 }
