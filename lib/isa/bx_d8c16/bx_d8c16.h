@@ -9,7 +9,7 @@
 #define __BX_CODE_T__ __UINT16_TYPE__
 #define __BX_DATA_T__ __UINT8_TYPE__
 
-#include <lib/code_env/code_env_isa.h>
+#include <code_env/code_env_isa.h>
 
 
 

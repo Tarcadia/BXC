@@ -1,3 +1,4 @@
+
 #include "bx_d8c16.h"
 
 
@@ -50,34 +51,4 @@ __BX_CODE_T__ __bx_d8c16_op_i12_code(
         (o & 0x000F)
         | ((i12 & 0x0FFF) << 4)
     );
-}
-
-
-
-int __bx_code_dump_bin__(
-    __bx_code_env_t__* __bx_code_env__,
-    const char* filename
-)
-{
-    // TODO: Implement this function.
-    return 0;
-}
-
-int __bx_code_dump_hex__(
-    __bx_code_env_t__* __bx_code_env__,
-    const char* filename
-)
-{
-    // TODO: Implement this function.
-    return 0;
-}
-
-int __bx_code_dump_verilog__(
-    __bx_code_env_t__* __bx_code_env__,
-    const char* filename,
-    const char* modulename
-)
-{
-    // TODO: Implement this function.
-    return 0;
 }
