@@ -18,7 +18,7 @@ int __bx_code_dump_bin__(
     for (__BX_ADDR_T__ _addr = 0; _addr < __bx_code_env__->__rom_idx__; _addr += 1)
     {
         __BX_CODE_T__ _mask = (__BX_CODE_T__)((unsigned char) -1);
-        __BX_CODE_T__ _code = (__bx_code_env__->__rom_data__[_addr]) << (16 - sizeof(__BX_CODE_T__));
+        __BX_CODE_T__ _code = (__bx_code_env__->__rom_data__[_addr]);
         int _i_buf = _addr * sizeof(__BX_CODE_T__) + sizeof(__BX_CODE_T__);
         switch (sizeof(__BX_CODE_T__))
         {
